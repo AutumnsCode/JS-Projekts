@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header >
+      <h1>Blackjack</h1>
+    </header>
+    <main class="main">
+      <aside class="aside-mobil">
+        <h2 class="aside-mobil-header">
+          <button type="button"
+                  class="aside-mobil-header__btn"
+                  aria-expanded="true"
+                  aria-controls="content-1"
+                  id="btn-1"
+          >
+            <span class="aside-mobil-header__title">
+              Regel
+            </span>
+          </button>
+        </h2>
+        <section class="aside-mobil-content" 
+                  id="content-1" 
+                  role="region"
+                  aria-labelledby="btn-1"
+        >
+          <p>Blackjack, known by some as “21,” is a beloved card game where players aim to beat the dealer with a hand that most closely totals 21 points. While it’s mainly a game of luck and chance, Blackjack has its fair share of strategies that can help you get the most out of your bets and payouts.</p>
+        </section>
+      </aside>
+      <div class="aside-large">
+        <h2>Regel</h2>
+        <p>Blackjack, known by some as “21,” is a beloved card game where players aim to beat the dealer with a hand that most closely totals 21 points. While it’s mainly a game of luck and chance, Blackjack has its fair share of strategies that can help you get the most out of your bets and payouts.</p>
+      </div>
+
+      <section class="game">
+        <!-- <button type="button" class="start-game" id="startGame">Start the game</button> -->
+        <div class="game-field">
+          <p id="message-el">Round 1</p>
+          <p class="cards-el">Cards:</p>
+          <p class="sum-el">Sum:</p>
+
+          
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

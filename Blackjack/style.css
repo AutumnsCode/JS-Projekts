@@ -1,0 +1,141 @@
+
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #3c663f;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  font-size: inherit;
+  line-height: 1.1;
+}
+
+.container {
+  width: calc(100% - 8rem);
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+header > h1 {
+  color: transparent;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #fff;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+.aside-mobil {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.aside-mobil-header__btn {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  display: block;
+  background: inherit;
+}
+
+.aside-mobil-header__title {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.aside-mobil-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.aside-mobil-content > * {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.aside-large {
+  display: none;
+  color: #111;
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.aside-large h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #3c663f;
+  margin-bottom: 0.5rem;
+}
+
+
+
+@media screen and (min-width:50em) {
+  main {
+    gap: 3rem;
+    grid-template-columns: 25rem 1fr;
+  }
+  .aside-mobil {
+    display: none;
+  }
+
+  .aside-large {
+    display: block;
+  }
+}
+
+/* Spielfeld */
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20em;
+}
+
+/* .start-game {
+  padding: 2rem 3rem;
+  background: inherit;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #3c663f;
+  font-weight: 600;
+  cursor: pointer;
+} */
